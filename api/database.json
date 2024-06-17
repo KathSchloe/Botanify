@@ -1,0 +1,161 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "userName": "PlantLover56",
+            "email": "plantlover56@gmail.com",
+            "password": "12345",
+            "isEmployee": false
+        },
+        {
+            "id": 2,
+            "userName": "Employee",
+            "email": "employee@gmail.com",
+            "password": "12345",
+            "isEmployee": true  
+        },
+        {
+            "id": 3,
+            "userName": "LeafMan32",
+            "email": "leafman32@gmail.com",
+            "password": "12345",
+            "isEmployee": false  
+        }
+    ],
+    "plants": [
+        {
+            "id": 1,
+            "userId": 1,
+            "name": "monstera deliciosa albo",
+            "family": "araceae",
+            "specialQualities": "variegation",
+            "notes": "the sunlight in the living room isn't bright enough for him",
+            "img": "https://d2j6dbq0eux0bg.cloudfront.net/images/32621188/1515898947.jpg"
+        },
+        {
+            "id": 2,
+            "userId": 1,
+            "name": "syngonium tricolor",
+            "family": "araceae",
+            "specialQualities": "tricolor variegation (green, pink, and cream colors)",
+            "notes": "don't kill, expensive!!",
+            "img": "https://plantaroid.com/cdn/shop/products/SyngoniumRedSpotTricolor_2.jpg?v=1683350024&width=1445"
+        },
+        {
+            "id": 3,
+            "userId": 1,
+            "name": "snow queen pothos",
+            "family": "araceae",
+            "specialQualities": "variegation",
+            "notes": "located in the bedroom by window",
+            "img": "https://media.greg.app/Y2FyZS1wbGFudC1wcm9maWxlLzE0ODM1MC82RDQ0QzgwNy02MTk4LTRFMkEtQTZFNC0zMDNCNTQzRUIxMjIucG5n?format=pjpeg&optimize=high&auto=webp&width=450"
+        },
+        {
+            "id": 4,
+            "userId": 1,
+            "name": "alocasia mirror face",
+            "family": "araceae",
+            "specialQualities": "n/a",
+            "notes": "check for corms on occasion",
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2wmrPHorCBn6btJRmJlQPNT4YybydqjkVIQ&s"
+        },
+        {
+            "id": 5,
+            "userId": 1,
+            "name": "snake plant",
+            "family": "asparagaceae",
+            "specialQualities": "n/a",
+            "notes": "impossible to kill",
+            "img": "https://myuncommonsliceofsuburbia.com/wp-content/uploads/2023/07/snake-plant-4985304_1280.jpg"
+        },
+        {
+            "id": 6,
+            "userId": 1,
+            "name": "fittonia",
+            "family": "acanthus",
+            "specialQualities": "n/a",
+            "notes": "dramatic",
+            "img": "https://www.gardenia.net/wp-content/uploads/2024/03/shutterstock_725555002.jpg"
+        },
+        {
+            "id": 7,
+            "userId": 1,
+            "name": "angel wing begonia",
+            "family": "begoniaceae",
+            "specialQualities": "n/a",
+            "notes": "wants a moss pole",
+            "img": "https://hips.hearstapps.com/hmg-prod/images/dots-begonia-house-plant-leaves-begonia-maculata-in-royalty-free-image-1712252103.jpg?crop=0.542xw:0.813xh;0.348xw,0.113xh&resize=1200:*"
+        },
+        {
+            "id": 8,
+            "userId": 1,
+            "name": "pepperomia obtusifolia",
+            "family": "piperaceae",
+            "specialQualities": "n/a",
+            "notes": "not pepperoni, don't eat!",
+            "img": "https://www.thespruce.com/thmb/frUbcMGSD9n-hC9Cfg0DQpA8qmo=/6000x0/filters:no_upscale():max_bytes(150000):strip_icc()/peperomia-obtusifolia-growing-guide-5271088-hero-4b5c709b63414d48b097f8f27102fdf4.JPG"
+        },
+        {
+            "id": 9,
+            "userId": 1,
+            "name": "philodendron silver sword",
+            "family": "araceae",
+            "specialQualities": "n/a",
+            "notes": "needs a moss pole",
+            "img": "https://media.greg.app/cGxhbnQtZGItcGhvdG9zL3BoaWxvZGVuZHJvbi5qcGc=?format=pjpeg&optimize=high&auto=webp&precrop=1000:1000,smart&fit=crop&width=1000&height=1000"
+        },
+        {
+            "id": 10,
+            "userId": 1,
+            "name": "rabbit foot fern",
+            "family": "davalliaceae",
+            "specialQualities": "n/a",
+            "notes": "likes bright, indirect light. Mist daily if not in a humid room.",
+            "img": "https://hearthandvine.com/wp-content/uploads/2021/02/Rabbits-foot-fern-terra-cotta-pot.jpg"
+        }
+    ],
+    "waterSchedule": [
+        {
+            "id": 1,
+            "plantId": 3,
+            "date": "7/12/2024"
+        },
+        {
+            "id": 2,
+            "plantId": 5,
+            "date": "7/8/2024"
+        },
+        {
+            "id": 3,
+            "plantId": 8,
+            "date": "7/16/2024"
+        },
+        {
+            "id": 4,
+            "plantId": 9,
+            "date": "7/20/2024"
+        }
+    ],
+    "fertSchedule": [
+        {
+            "id": 1,
+            "plantId": 1,
+            "date": "7/1/2024"
+        },
+        {
+            "id": 2,
+            "plantId": 4,
+            "date": "7/18/2024"
+        },
+        {
+            "id": 3,
+            "plantId": 5,
+            "date": "7/6/2024"
+        },
+        {
+            "id": 4,
+            "plantId": 10,
+            "date": "7/2/2024"
+        }
+    ]
+}
