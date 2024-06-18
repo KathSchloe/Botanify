@@ -1,10 +1,11 @@
 import { useState } from "react";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
-import { ApplicationViews } from "./views/applicationViews.jsx";
-import { Login } from './components/auth/login'
-import { Register } from './components/auth/register'
-import { Authorized } from './views/Authorized'
+import { ApplicationViews } from "./components/views/applicationViews";
+import { Login } from "./components/auth/login";
+
+import { Authorized } from "./components/views/authorized";
+import { Register } from "./components/auth/register";
 
 function App() {
   const [count, setCount] = useState(0);

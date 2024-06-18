@@ -10,7 +10,7 @@ export const PlantForm = ({ currentUser }) => {
         event.preventDefault()
 
         if (plant.name && plant.family && plant.specialQualities && plant.notes && plant.img) {
-            const newFlower = {
+            const newPlant = {
                 userId: currentUser,
                 name: plant.name,
                 family: plant.name,

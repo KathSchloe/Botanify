@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "./NavBar.css"
 
 import {
   Collapse,
@@ -23,7 +24,7 @@ export const NavBar = (args) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="me-auto" navbar>
             <NavItem>
-              <NavLink href="/plants/">Plant Library</NavLink>
+              <NavLink href="/plants">Plant Library</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="/waterSchedule">Watering Schedule</NavLink>

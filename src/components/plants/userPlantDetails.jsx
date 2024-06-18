@@ -2,10 +2,10 @@
 
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { getWaterService } from "../../services/waterService";
-import { getPlantById } from "../../services/plantService";
+import { getAllWtrSchedules } from "../services/waterService";
+import { getPlantById } from "../services/plantService";
 
-export const CustomerPlantDetails = () => {
+export const UserPlantDetails = () => {
   const [foundPlant, setFoundPlant] = useState([]);
   const { plantId } = useParams();
 
@@ -18,7 +18,7 @@ export const CustomerPlantDetails = () => {
   }, []);
 
   useEffect(() => {
-    getWaterService().then((array) => {
+    getAllWtrSchedules().then((array) => {
         setWaterSchedule(array)
     })
   },[]);

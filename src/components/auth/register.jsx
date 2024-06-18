@@ -4,7 +4,7 @@ import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 
 import "./login.css"
-import { createUser, getUserByEmail } from "../../services/userService"
+import { createUser, getUserByEmail } from "../services/userService"
 
 export const Register = (props) => {
   const [user, setUser] = useState({

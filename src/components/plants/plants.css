@@ -1,0 +1,32 @@
+.plant-img{
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.plants-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.plants{
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+img{
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+button{
+    background-color:rgb(72, 122, 89);
+    height: 100px;
+}
+
+h2{
+    display:grid;
+}

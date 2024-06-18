@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
-import { getAllPlants } from "../../services/plantService.jsx"
 import { useNavigate } from "react-router-dom"
+import { getAllPlants } from "../services/plantService"
+import "./plants.css"
 
 
 
@@ -37,7 +38,7 @@ return (
       <button
               className="filter-btn btn-primary"
               onClick={() => {
-                  navigate("/home")
+                  navigate("/")
               }}
           >
               back
