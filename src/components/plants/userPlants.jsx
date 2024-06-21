@@ -46,7 +46,7 @@ return (
       <button
               className="filter-btn btn-primary"
               onClick={() => {
-                  navigate("/newPlant")
+                  navigate("/plants/newPlant")
               }}
           >
               Add new plant
