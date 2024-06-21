@@ -4,7 +4,7 @@ export const getAllPlants = () => {
     .then((res) => res.json())
 }
 //Create new plant
-export const newPlant = (plant) => {
+export const createPlant = (plant) => {
     return fetch('http://localhost:8088/plants', {
         method: "POST",
         headers: {

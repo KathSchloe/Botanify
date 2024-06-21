@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
+import { createPlant } from "../services/plantService"
 
 export const PlantForm = ({ currentUser }) => {
     const [plant, setPlant] = useState({name: "", family: "", specialQualities: "", notes: "", img_link:""})
@@ -11,12 +12,12 @@ export const PlantForm = ({ currentUser }) => {
 
         if (plant.name && plant.family && plant.specialQualities && plant.notes && plant.img) {
             const newPlant = {
-                userId: currentUser,
+                userId: currentUser?.currentUser?.id,
                 name: plant.name,
                 family: plant.family,
                 specialQualities: plant.specialQualities,
                 notes: plant.notes,
-                image: plant.img,
+                img: plant.img,
             }
 
             createPlant(newPlant).then(() => {

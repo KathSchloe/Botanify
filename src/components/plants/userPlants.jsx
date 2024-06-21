@@ -67,6 +67,8 @@ return (
           >
               Edit plant
       </button>
+      <button onClick={() => console.log(currentUser)}>Console Log User Details</button>
+
   </div>
 )
 }
