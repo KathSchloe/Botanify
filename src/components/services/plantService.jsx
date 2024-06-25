@@ -20,7 +20,7 @@ export const deletePlant = (plantId) => {
     })
 }
 //edit plant
-export const updatePlant = (plant) => {
+export const editPlant = (plant) => {
     return fetch(`http://localhost:8088/plants/${plant.id}`, {
         method: "PUT",
         headers: {

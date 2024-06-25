@@ -114,49 +114,13 @@
       "img": "https://hearthandvine.com/wp-content/uploads/2021/02/Rabbits-foot-fern-terra-cotta-pot.jpg"
     },
     {
-      "userId": {
-        "currentUser": {
-          "id": 1,
-          "isEmployee": false
-        }
-      },
-      "name": "sdgh",
-      "family": "gsdg",
-      "specialQualities": "gdsgvt",
-      "notes": "gdsgd",
-      "image": "gdgfd",
-      "id": 11
-    },
-    {
-      "userId": {
-        "currentUser": {
-          "id": 1,
-          "isEmployee": false
-        }
-      },
-      "name": "test",
-      "family": "fgtdertg",
-      "specialQualities": "gdfhg",
-      "notes": "fgdfh",
-      "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXDrhpdCq_eQeyKuPN9hFXI41NgHk9FX_b9FGmEWNrgYpGZw9C",
-      "id": 12
-    },
-    {
-      "name": "fsdg",
-      "family": "dsgf",
-      "specialQualities": "sgd",
-      "notes": "sdf",
-      "img": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXDrhpdCq_eQeyKuPN9hFXI41NgHk9FX_b9FGmEWNrgYpGZw9C",
-      "id": 13
-    },
-    {
+      "id": 11,
       "userId": 1,
-      "name": "embarrassing plant",
-      "family": "embarrassing",
-      "specialQualities": "embarrassing",
-      "notes": "this is embarrasssing",
-      "img": "https://woodlandpulse.com/cdn/shop/files/pots-for-planting-succulents-modern-planters-succulent-pot-modern-plant-pot-unique-planters-unique-planter.jpg?v=1689475214",
-      "id": 14
+      "name": "zz plant",
+      "family": "idk lol",
+      "specialQualities": "never dies",
+      "notes": "water sometimes",
+      "img": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1660073901-best-indoor-plants-zz-plant-1660073875.png?crop=1.00xw:0.802xh;0,0.168xh&resize=980:*"
     }
   ],
   "waterSchedule": [

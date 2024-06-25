@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import {
   getPlantById,
-  updatePlant,
-} from "../../services/plantService.jsx";
+  editPlant,
+} from "../services/plantService.jsx";
 import { useNavigate, useParams } from "react-router-dom";
 
-export const editPlant = () => {
+export const EditPlant = ({currentUser}) => {
   const [plant, setMyPlant] = useState({});
   const { plantId } = useParams();
 
@@ -19,14 +19,15 @@ export const editPlant = () => {
   const handleSave = (event) => {
     event.preventDefault();
     const editedPlant = {
-        userId: currentUser,
+        id: plant.id,
+        userId: currentUser.currentUser.id,
         name: plant.name,
         family: plant.family,
         specialQualities: plant.specialQualities,
         notes: plant.notes,
-        image: plant.img,
+        img: plant.img,
     };
-    updatePlant(editedPlant).then(() => {
+    editPlant(editedPlant).then(() => {
       navigate("/plants");
     });
   };
@@ -38,16 +39,18 @@ export const editPlant = () => {
         <h2 className="header-edit">Edit Plant</h2>
         <fieldset>
           <div>
+          <label>Name
           <input
                         type="text"
                         className="form-control"
-                        placeholder="plant name"
+                        placeholder={plant.name}
                         onChange={(event) => {
                             const plantCopy = {...plant }
                             plantCopy.name = event.target.value
-                            setPlant(plantCopy)
+                            setMyPlant(plantCopy)
                         }}
                     />
+                    </label>
             </div>
         </fieldset>
         <fieldset>
@@ -56,11 +59,11 @@ export const editPlant = () => {
                     <input
                         type="text"
                         className="form-control"
-                        placeholder="plant family"
+                        placeholder={plant.family}
                         onChange={(event) => {
                             const plantCopy = {...plant }
                             plantCopy.family = event.target.value
-                            setPlant(plantCopy)
+                            setMyPlant(plantCopy)
                         }}
                     />
                 </label>
@@ -72,11 +75,11 @@ export const editPlant = () => {
                     <input
                         type="text"
                         className="form-control"
-                        placeholder="plant special qualities"
+                        placeholder={plant.specialQualities}
                         onChange={(event) => {
                             const plantCopy = {...plant }
                             plantCopy.specialQualities = event.target.value
-                            setPlant(plantCopy)
+                            setMyPlant(plantCopy)
                         }}
                     />
                 </label>
@@ -88,11 +91,11 @@ export const editPlant = () => {
                     <input
                         type="text"
                         className="form-control"
-                        placeholder="plant notes"
+                        placeholder={plant.notes}
                         onChange={(event) => {
                             const plantCopy = {...plant }
                             plantCopy.notes = event.target.value
-                            setPlant(plantCopy)
+                            setMyPlant(plantCopy)
                         }}
                     />
                 </label>
@@ -104,11 +107,11 @@ export const editPlant = () => {
                     <input
                         type="text"
                         className="form-control"
-                        placeholder="image link goes here"
+                        placeholder={plant.img}
                         onChange={(event) => {
                             const plantCopy = {...plant }
                             plantCopy.img = event.target.value
-                            setPlant(plantCopy)
+                            setMyPlant(plantCopy)
                         }}
                     />
                 </label>
