@@ -116,54 +116,101 @@
     {
       "id": 11,
       "userId": 1,
-      "name": "zz plant",
-      "family": "idk lol",
-      "specialQualities": "never dies",
-      "notes": "water sometimes",
-      "img": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1660073901-best-indoor-plants-zz-plant-1660073875.png?crop=1.00xw:0.802xh;0,0.168xh&resize=980:*"
+      "name": "banana",
+      "family": "banana",
+      "specialQualities": "banana",
+      "notes": "is banana",
+      "img": "https://hips.hearstapps.com/hmg-prod/images/banana-musa-plant-in-pot-royalty-free-image-1699118571.jpg?crop=0.669xw:1.00xh;0.0530xw,0&resize=640:*"
     }
   ],
   "waterSchedule": [
     {
       "id": 1,
       "plantId": 3,
+      "userId": 1,
       "date": "7/12/2024"
     },
     {
       "id": 2,
       "plantId": 5,
+      "userId": 1,
       "date": "7/8/2024"
     },
     {
       "id": 3,
       "plantId": 8,
+      "userId": 1,
       "date": "7/16/2024"
     },
     {
       "id": 4,
       "plantId": 9,
+      "userId": 1,
       "date": "7/20/2024"
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
+    },
+    {
+      "id": 10
+    },
+    {
+      "id": 11
+    },
+    {
+      "id": 12
+    },
+    {
+      "id": 13
+    },
+    {
+      "id": 14
+    },
+    {
+      "id": 15
+    },
+    {
+      "id": 16
+    },
+    {
+      "id": 17
     }
   ],
   "fertSchedule": [
     {
       "id": 1,
       "plantId": 1,
+      "userId": 1,
       "date": "7/1/2024"
     },
     {
       "id": 2,
       "plantId": 4,
+      "userId": 1,
       "date": "7/18/2024"
     },
     {
       "id": 3,
       "plantId": 5,
+      "userId": 1,
       "date": "7/6/2024"
     },
     {
       "id": 4,
       "plantId": 10,
+      "userId": 1,
       "date": "7/2/2024"
     }
   ]

@@ -1,4 +1,4 @@
-import "./Nurseries.css";
+import "./waterSchedule.css";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Card, CardBody, CardSubtitle, Col, Row, Button } from "reactstrap";
@@ -6,7 +6,7 @@ import { getAllWtrSchedules } from "../services/waterService.jsx";
 
 export const wtrScheduleList = ({ currentUser }) => {
   const [allWtrSchedules, setAllWtrSchedules] = useState([]);
-  const [myWtrSchedules, setMyWtrSchedules] = useState([]);
+  const [userWtrSchedules, setUserWtrSchedules] = useState([]);
 
   //employee view 
   useEffect(() => {

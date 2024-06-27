@@ -18,16 +18,18 @@ export const NavBar = (args) => {
 
   return (
     <div>
-      <Navbar {...args}>
+      <Navbar {...args} className="NavBar">
         <NavbarBrand href="/">Front End Capstone | Botanify</NavbarBrand>
-        <NavbarToggler onClick={toggle} />
+        <NavbarToggler onClick={toggle} > <div class="burger"></div>
+<div class="burger"></div>
+<div class="burger"></div> </NavbarToggler>
         <Collapse isOpen={isOpen} navbar>
           <Nav className="me-auto" navbar>
             <NavItem>
               <NavLink href="/plants">Plant Library</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/waterSchedule">Watering Schedule</NavLink>
+              <NavLink href="/wtrSchedule">Watering Schedule</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="/fertSchedule">Fertilization Schedule</NavLink>

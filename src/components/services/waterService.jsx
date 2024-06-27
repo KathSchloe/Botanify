@@ -1,7 +1,7 @@
 
   //get all water schedules fetch call
   export const getAllWtrSchedules = () => {
-    return fetch(`http://localhost:8088/waterSchedule`).then((res) => res.json());
+    return fetch(`http://localhost:8088/waterSchedule?_expand=plant`).then((res) => res.json());
   };
   
   export const createWtrSchedule = (waterSchedule) => {
