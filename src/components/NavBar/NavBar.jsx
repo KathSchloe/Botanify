@@ -25,6 +25,9 @@ export const NavBar = (args) => {
 <div class="burger"></div> </NavbarToggler>
         <Collapse isOpen={isOpen} navbar>
           <Nav className="me-auto" navbar>
+          <NavItem>
+              <NavLink href="/">Home</NavLink>
+            </NavItem>
             <NavItem>
               <NavLink href="/plants">Plant Library</NavLink>
             </NavItem>
@@ -34,9 +37,9 @@ export const NavBar = (args) => {
             <NavItem>
               <NavLink href="/fertSchedule">Fertilization Schedule</NavLink>
             </NavItem>
-            <NavItem>
+            {/* <NavItem>
               <NavLink href="/chat">Chat</NavLink>
-            </NavItem>
+            </NavItem> */}
             <NavItem>
               <NavLink href="/"
                 onClick={() => {
