@@ -5,24 +5,29 @@
 }
 
 .plants-container{
-    display: flex;
+    display: inline-block;
     flex-direction: row;
+    
 }
 
 .plants{
-    border: 1px solid black;
+    border: 3px solid rgb(76, 99, 71);
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
+    background-color: rgb(110, 140, 118);
 }
 
 img{
     width: 100px;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 2px solid rgb(78, 74, 74);
+    opacity: 70%;
+    margin-left: 0px;
 }
 
 button{
+    color: rgb(242, 242, 230);
     background-color:rgb(87, 129, 101);
     height: 45px;
     width: 150px;
@@ -30,4 +35,6 @@ button{
 
 h2{
     display:grid;
+    color: rgb(154, 186, 161);
+    font-family:initial;
 }

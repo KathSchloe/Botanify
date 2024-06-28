@@ -1,10 +1,12 @@
-.NavBar{
-    background-color: rgb(255, 255, 255);
+.NavbarBrand{
+   text-emphasis-color: rgb(181, 179, 184);
 }
 
 .burger {
     width: 35px;
     height: 5px;
-    background-color: rgb(63, 101, 72);
+    background-color: rgb(148, 157, 150);
     margin: 6px 0;
+    position: relative;
+    text-align: center;
   }

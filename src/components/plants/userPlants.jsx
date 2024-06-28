@@ -34,11 +34,12 @@ return (
       <article className="plants">
           {userPlants.map((plantObj) => {
               return <div>
+                <img src= {plantObj.img}></img>
                 Plant Name: {plantObj.name} 
                 Plant Family: {plantObj.family} 
                 Special Qualities: {plantObj.specialQualities} 
                 Notes: {plantObj.notes}
-                <img src= {plantObj.img}></img>
+                
                 <button
               className="filter-btn btn-primary"
               onClick={() => {

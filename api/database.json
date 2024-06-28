@@ -30,7 +30,7 @@
       "family": "araceae",
       "specialQualities": "variegation",
       "notes": "the sunlight in the living room isn't bright enough for him",
-      "img": "https://d2j6dbq0eux0bg.cloudfront.net/images/32621188/1515898947.jpg"
+      "img": "https://marisgardens.com/cdn/shop/files/321487643_1091141828245433_1199731897904210720_n.jpg?v=1685504793"
     },
     {
       "id": 2,
@@ -57,7 +57,7 @@
       "family": "araceae",
       "specialQualities": "n/a",
       "notes": "check for corms on occasion",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2wmrPHorCBn6btJRmJlQPNT4YybydqjkVIQ&s"
+      "img": "https://i.pinimg.com/736x/bd/9e/c8/bd9ec80723e0176e8b1c4803b268b89b.jpg"
     },
     {
       "id": 5,
@@ -66,7 +66,7 @@
       "family": "asparagaceae",
       "specialQualities": "n/a",
       "notes": "impossible to kill",
-      "img": "https://myuncommonsliceofsuburbia.com/wp-content/uploads/2023/07/snake-plant-4985304_1280.jpg"
+      "img": "https://www.bhg.com/thmb/K6rf4xgwL6f4q-8P8QaUrooGBy4=/1800x0/filters:no_upscale():strip_icc()/birds-nest-snake-plant-1576264c-b0ddb852dc514dadb79af48d59125d57.jpg"
     },
     {
       "id": 6,
@@ -75,7 +75,7 @@
       "family": "acanthus",
       "specialQualities": "n/a",
       "notes": "dramatic",
-      "img": "https://www.gardenia.net/wp-content/uploads/2024/03/shutterstock_725555002.jpg"
+      "img": "https://www.ugaoo.com/cdn/shop/files/Details2.jpg?v=1695379955&width=1500"
     },
     {
       "id": 7,
@@ -93,7 +93,7 @@
       "family": "piperaceae",
       "specialQualities": "n/a",
       "notes": "not pepperoni, don't eat!",
-      "img": "https://www.thespruce.com/thmb/frUbcMGSD9n-hC9Cfg0DQpA8qmo=/6000x0/filters:no_upscale():max_bytes(150000):strip_icc()/peperomia-obtusifolia-growing-guide-5271088-hero-4b5c709b63414d48b097f8f27102fdf4.JPG"
+      "img": "https://www.moffatts.co.nz/cdn/shop/products/peperomiaObsJADE.jpg?v=1669092381"
     },
     {
       "id": 9,
@@ -149,43 +149,10 @@
       "date": "7/20/2024"
     },
     {
-      "id": 5
-    },
-    {
+      "plantId": 3,
+      "date": "2024-07-04",
+      "userId": 1,
       "id": 6
-    },
-    {
-      "id": 7
-    },
-    {
-      "id": 8
-    },
-    {
-      "id": 9
-    },
-    {
-      "id": 10
-    },
-    {
-      "id": 11
-    },
-    {
-      "id": 12
-    },
-    {
-      "id": 13
-    },
-    {
-      "id": 14
-    },
-    {
-      "id": 15
-    },
-    {
-      "id": 16
-    },
-    {
-      "id": 17
     }
   ],
   "fertSchedule": [
