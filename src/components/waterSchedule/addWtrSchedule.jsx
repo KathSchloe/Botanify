@@ -16,13 +16,10 @@ export const AddWtrSchedule = ({ currentUser }) => {
     const wtrScheduleCopy = {...newWtrSchedule}
     wtrScheduleCopy.userId= currentUser?.currentUser?.id
     console.log(wtrScheduleCopy)
-    // createWtrSchedule(newWtrSchedule).then(() => {
-    //   navigate("/wtrScheduleDetails");
-    // });
+    createWtrSchedule(wtrScheduleCopy).then(() => {
+      navigate("/wtrSchedule");
+    });
   };
-  createWtrSchedule(newWtrSchedule).then(() => {
-    navigate("/wtrSchedule")
-})
 
   useEffect(()=> {
     getAllPlants().then((taco) => setPlantHolder(taco))
