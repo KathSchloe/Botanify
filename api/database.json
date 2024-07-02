@@ -20,6 +20,11 @@
       "email": "leafman32@gmail.com",
       "password": "12345",
       "isEmployee": false
+    },
+    {
+      "email": "plantman46@gmail.com",
+      "username": "Plantman46",
+      "id": 4
     }
   ],
   "plants": [
@@ -126,6 +131,12 @@
       "date": "2024-07-26",
       "userId": 1,
       "id": 6
+    },
+    {
+      "plantId": 10,
+      "date": "2024-07-22",
+      "userId": 1,
+      "id": 7
     }
   ],
   "fertSchedule": [
@@ -137,26 +148,15 @@
     },
     {
       "id": 2,
-      "plantId": 4,
-      "userId": 1,
-      "date": "7/18/2024"
+      "plantId": 6,
+      "userId": 4,
+      "date": "2024-07-31"
     },
     {
       "id": 3,
-      "plantId": 5,
+      "plantId": 2,
       "userId": 1,
-      "date": "7/6/2024"
-    },
-    {
-      "id": 4,
-      "plantId": 10,
-      "userId": 1,
-      "date": "7/2/2024"
-    },
-    {
-      "plantId": 3,
-      "date": "2024-08-02",
-      "id": 5
+      "date": "2024-07-26"
     }
   ]
 }
