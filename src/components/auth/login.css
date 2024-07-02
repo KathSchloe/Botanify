@@ -18,8 +18,18 @@
     height: 35px;
     padding: 5px;
     border-radius: 5px;
+    background-color: #eaeed4;
 }
 
+h3 {
+    font-family:'Times New Roman', Times, serif;
+    color: #3b4934;
+    font-size:large;
+}
+
+/* .container {
+    background-color: #506d45;
+} */
 /* body {
     background-image: url('https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLhKK_fi5t8Tjg3y1_qdXHqh8eodMDlDC0Z8qNfLL0arQfo7rY');
 } */

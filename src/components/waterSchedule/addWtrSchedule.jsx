@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button, Input, Form } from "reactstrap";
 import "./waterSchedule.css"
-import { createWtrSchedule } from "../services/waterService";
+import { NewWtrSchedule } from "../services/waterService";
 import { getAllPlants } from "../services/plantService";
 
-export const AddWtrSchedule = ({ currentUser }) => {
+export const CreateWtrSchedule = ({ currentUser }) => {
   const [newWtrSchedule, setNewWtrSchedule] = useState({});
   const [plantHolder, setPlantHolder] = useState([]);
 
@@ -16,7 +16,7 @@ export const AddWtrSchedule = ({ currentUser }) => {
     const wtrScheduleCopy = {...newWtrSchedule}
     wtrScheduleCopy.userId= currentUser?.currentUser?.id
     console.log(wtrScheduleCopy)
-    createWtrSchedule(wtrScheduleCopy).then(() => {
+    NewWtrSchedule(wtrScheduleCopy).then(() => {
       navigate("/wtrSchedule");
     });
   };
@@ -30,7 +30,6 @@ export const AddWtrSchedule = ({ currentUser }) => {
         <h2 className="header-new-wtrSchedule">Add New Water Schedule</h2>
         <fieldset>
         <div>
-          <label>plant</label>
         <Input
           type="select"
           placeholder="Plant Name"
@@ -59,6 +58,14 @@ export const AddWtrSchedule = ({ currentUser }) => {
         </div>
         </fieldset>
       <fieldset>
+      <button
+              className="filter-btn btn-primary"
+              onClick={() => {
+                  navigate("/wtrSchedule")
+              }}
+          >
+              back
+      </button>
         <Button color="success" size="sm" onClick={handleSave}>
           Submit
         </Button>

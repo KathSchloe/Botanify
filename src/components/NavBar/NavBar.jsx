@@ -20,9 +20,9 @@ export const NavBar = (args) => {
     <div>
       <Navbar {...args} className="NavBar">
         <NavbarBrand href="/">Front End Capstone | Botanify</NavbarBrand>
-        <NavbarToggler onClick={toggle} > <div class="burger"></div>
-<div class="burger"></div>
-<div class="burger"></div> </NavbarToggler>
+        <NavbarToggler onClick={toggle} > <div className="burger"></div>
+<div className="burger"></div>
+<div className="burger"></div> </NavbarToggler>
         <Collapse isOpen={isOpen} navbar>
           <Nav className="me-auto" navbar>
           <NavItem>

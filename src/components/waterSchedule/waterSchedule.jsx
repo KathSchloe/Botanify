@@ -2,7 +2,7 @@ import "./waterSchedule.css";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Card, CardBody, CardSubtitle, Col, Row, Button } from "reactstrap";
-import { getAllWtrSchedules } from "../services/waterService.jsx";
+import { DeleteWtrSchedule, GetAllWtrSchedules } from "../services/waterService.jsx";
 
 export const wtrScheduleList = ({ currentUser }) => {
   const [allWtrSchedules, setAllWtrSchedules] = useState([]);
@@ -10,15 +10,15 @@ export const wtrScheduleList = ({ currentUser }) => {
 
   //employee view 
   useEffect(() => {
-    getAllWtrSchedules().then((wtrScheduleArray) => {
+    GetAllWtrSchedules().then((wtrScheduleArray) => {
       setAllWtrSchedules(wtrScheduleArray);
     });
   }, []);
 
 //function to handle deleting water schedule from database 
   const handleDelete = (waterSchedule) => {
-    deleteNursery(waterSchedule.id).then(() => {
-      getAllWtrSchedules().then((wtrScheduleArray) => {
+    DeleteWtrSchedule(waterSchedule.id).then(() => {
+      GetAllWtrSchedules().then((wtrScheduleArray) => {
         setAllWtrSchedules(wtrScheduleArray);
       });
     });

@@ -38,7 +38,7 @@
       "name": "syngonium tricolor",
       "family": "araceae",
       "specialQualities": "tricolor variegation (green, pink, and cream colors)",
-      "notes": "don't kill, expensive!!",
+      "notes": "n/a",
       "img": "https://plantaroid.com/cdn/shop/products/SyngoniumRedSpotTricolor_2.jpg?v=1683350024&width=1445"
     },
     {
@@ -112,45 +112,18 @@
       "specialQualities": "n/a",
       "notes": "likes bright, indirect light. Mist daily if not in a humid room.",
       "img": "https://hearthandvine.com/wp-content/uploads/2021/02/Rabbits-foot-fern-terra-cotta-pot.jpg"
-    },
-    {
-      "id": 11,
-      "userId": 1,
-      "name": "banana",
-      "family": "banana",
-      "specialQualities": "banana",
-      "notes": "is banana",
-      "img": "https://hips.hearstapps.com/hmg-prod/images/banana-musa-plant-in-pot-royalty-free-image-1699118571.jpg?crop=0.669xw:1.00xh;0.0530xw,0&resize=640:*"
     }
   ],
   "waterSchedule": [
     {
-      "id": 1,
-      "plantId": 3,
+      "id": 5,
+      "plantId": "4",
       "userId": 1,
-      "date": "7/12/2024"
+      "date": "2024-07-17"
     },
     {
-      "id": 2,
-      "plantId": 5,
-      "userId": 1,
-      "date": "7/8/2024"
-    },
-    {
-      "id": 3,
-      "plantId": 8,
-      "userId": 1,
-      "date": "7/16/2024"
-    },
-    {
-      "id": 4,
       "plantId": 9,
-      "userId": 1,
-      "date": "7/20/2024"
-    },
-    {
-      "plantId": 3,
-      "date": "2024-07-04",
+      "date": "2024-07-26",
       "userId": 1,
       "id": 6
     }
@@ -179,6 +152,11 @@
       "plantId": 10,
       "userId": 1,
       "date": "7/2/2024"
+    },
+    {
+      "plantId": 3,
+      "date": "2024-08-02",
+      "id": 5
     }
   ]
 }

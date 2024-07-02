@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
-import { getAllWtrSchedules } from "../services/waterService"
+import { DeleteWtrSchedule, GetAllWtrSchedules } from "../services/waterService"
 
 
 
@@ -10,11 +10,19 @@ export const WaterList = ({currentUser}) => {
   const navigate = useNavigate()
 
   const getAndSetWtrSchedule = () => {
-      getAllWtrSchedules().then((wtrScheduleArray) => {
+      GetAllWtrSchedules().then((wtrScheduleArray) => {
         
           setUserWtrSchedules(wtrScheduleArray)
       })
   }
+
+  const handleDelete = (waterSchedule) => {
+    DeleteWtrSchedule(waterSchedule.id).then(() => {
+      GetAllWtrSchedules().then((wtrScheduleArray) => {
+        setUserWtrSchedules(wtrScheduleArray);
+      });
+    });
+  };
 
   useEffect(()=> {
     getAndSetWtrSchedule()
@@ -25,15 +33,39 @@ return (
       <h2>Your Watering Schedules</h2>
       <article className="WtrSchedules">
           {userWtrSchedules.map((waterScheduleObj) => {
-              return <div>
+              return <div key={waterScheduleObj.id}>
                 {/* {waterScheduleObj.id}-  */}
+                <img src= {waterScheduleObj?.plant?.img}></img>
                 {waterScheduleObj?.plant?.name} needs watered on 
                 {waterScheduleObj.date}
-                <img src= {waterScheduleObj?.plant?.img}></img>
-                
+            
+                <button
+              className="filter-btn btn-primary"
+              onClick={() => {
+                 handleDelete(waterScheduleObj)
+              }}
+          >
+              Delete
+      </button>
+      <button
+              className="filter-btn btn-primary"
+              onClick={() => {
+                navigate(`/wtrSchedule/EditWtrSchedule/${waterScheduleObj.id}`)
+              }}
+          >
+              Edit
+      </button>
               </div>
           })}
       </article>
+      <button
+              className="filter-btn btn-primary"
+              onClick={() => {
+                  navigate("/")
+              }}
+          >
+              back
+      </button>
       <button
               className="filter-btn btn-primary"
               onClick={() => {

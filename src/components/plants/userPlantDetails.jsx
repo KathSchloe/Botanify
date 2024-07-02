@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { getAllWtrSchedules } from "../services/waterService";
+import { GetAllWtrSchedules } from "../services/waterService";
 import { getPlantById } from "../services/plantService";
 
 export const UserPlantDetails = () => {
@@ -10,6 +10,7 @@ export const UserPlantDetails = () => {
   const { plantId } = useParams();
 
   const [waterSchedule, setWaterSchedule] = useState([])
+  const [fertSchedule, setFertSchedule] = useState([])
 
   useEffect(() => {
     getPlantById(plantId).then((data) => {
@@ -18,15 +19,21 @@ export const UserPlantDetails = () => {
   }, []);
 
   useEffect(() => {
-    getAllWtrSchedules().then((array) => {
+    GetAllWtrSchedules().then((array) => {
         setWaterSchedule(array)
+    })
+  },[]);
+
+  useEffect(() => {
+    GetAllFertSchedules().then((array) => {
+        setFertSchedule(array)
     })
   },[]);
 
   return (
     <div>
       <div>
-        <img src={foundPlant.img} className="flower-img"></img>
+        <img src={foundPlant.img} className="plant-img"></img>
         <h2>--{foundPlant.name}--</h2>
         <p><i>Plant Family: {foundPlant.family}</i></p>
         <p>Special Qualities: {foundPlant.specialQualities}</p>

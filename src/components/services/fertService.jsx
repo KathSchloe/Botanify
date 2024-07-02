@@ -1,10 +1,10 @@
 
   //get all water schedules fetch call
-  export const getAllFertSchedules = () => {
-    return fetch(`http://localhost:8088/fertSchedule`).then((res) => res.json());
+  export const GetAllFertSchedules = () => {
+    return fetch(`http://localhost:8088/fertSchedule?_expand=plant`).then((res) => res.json());
   };
   
-  export const createFertSchedule = (fertSchedule) => {
+  export const CreateFertSchedule = (fertSchedule) => {
     return fetch(`http://localhost:8088/fertSchedule`, {
       method: "POST",
       headers: {
@@ -13,13 +13,13 @@
       body: JSON.stringify(fertSchedule),
     });
   };
-  export const deleteFertSchedule = (fertScheduleId) => {
+  export const DeleteFertSchedule = (fertScheduleId) => {
     return fetch(`http://localhost:8088/fertSchedule/${fertScheduleId}`, {
       method: "DELETE",
     });
   };
   
-  export const updateFertSchedule = (fertSchedule) => {
+  export const UpdateFertSchedule = (fertSchedule) => {
     return fetch(`http://localhost:8088/fertSchedule/${fertSchedule.id}`, {
       method: "PUT",
       headers: {
@@ -29,7 +29,7 @@
     });
   };
   
-  export const getFertScheduleById = (fertSchedule) => {
+  export const GetFertScheduleById = (fertSchedule) => {
     return fetch(`http://localhost:8088/fertSchedule/${fertSchedule}`).then((res) =>
       res.json()
     );
