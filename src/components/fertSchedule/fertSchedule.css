@@ -1,0 +1,25 @@
+.fertSchedule-header {
+    text-align: Center;
+    color: #126118;
+    font-size: 30px;
+  }
+  
+  .fertSchedules {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .header-new-fertSchedule {
+    text-align: Center;
+    color: #126118;
+    font-size: 30px;
+  }
+  
+  .header-edit {
+    text-align: Center;
+    color: #126118;
+    font-size: 30px;
+  }
+  

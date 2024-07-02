@@ -4,8 +4,13 @@ import { PlantList } from "../plants/userPlants";
 import { NavBar } from "../NavBar/NavBar";
 import { PlantForm } from "../plants/addPlant";
 import { EditPlant } from "../plants/editPlant";
-import { AddWtrSchedule } from "../waterSchedule/addWtrSchedule";
+import { CreateWtrSchedule } from "../waterSchedule/addWtrSchedule";
 import { WaterList } from "../waterSchedule/waterList";
+import { EditWtrSchedule } from "../waterSchedule/editWtrSchedule";
+import { FertList } from "../fertSchedule/fertList";
+import { EditFertSchedule } from "../fertSchedule/editFertSchedule";
+import { NewFertSchedule } from "../fertSchedule/addFertSchedule";
+
 
 export const UserViews = (currentUser) => {
   return (
@@ -28,8 +33,14 @@ export const UserViews = (currentUser) => {
         <Route path="WtrSchedule">
             <Route index element={<WaterList currentUser={currentUser}/>} />
             {/* <Route path="userPlantDetails/:wtrScheduleId" element={<UserWtrDetails currentUser={currentUser}/>}/> */}
-            <Route path="editWtrSchedule/:wtrScheduleId" element={< editWtrSchedule currentUser={currentUser}/>}/>
-        <Route path="newWtrSchedule" element={<AddWtrSchedule currentUser={currentUser}/>}/>
+            <Route path="editWtrSchedule/:wtrScheduleId" element={< EditWtrSchedule currentUser={currentUser}/>}/>
+        <Route path="newWtrSchedule" element={<CreateWtrSchedule currentUser={currentUser}/>}/>
+        </Route>
+        <Route path="FertSchedule">
+            <Route index element={<FertList currentUser={currentUser}/>} />
+            {/* <Route path="userPlantDetails/:wtrScheduleId" element={<UserWtrDetails currentUser={currentUser}/>}/> */}
+            <Route path="editFertSchedule/:fertScheduleId" element={< EditFertSchedule currentUser={currentUser}/>}/>
+        <Route path="newFertSchedule" element={<NewFertSchedule currentUser={currentUser}/>}/>
         </Route>
       </Route>
     </Routes>

@@ -5,7 +5,7 @@ import { Navigate, useLocation } from "react-router-dom"
 
 export const Authorized = ({ children }) => {
   let location = useLocation()
-  if (localStorage.getItem("greenbrier_user")) {
+  if (localStorage.getItem("botanify_user")) {
     return children
   }
   else {
