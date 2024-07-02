@@ -23,4 +23,14 @@
     font-size: 30px;
   }
   
-  
+  .wtrSchedule-container {
+    display: inline-block;
+  }
+
+  .WtrSchedules{
+    border: 3px solid rgb(76, 99, 71);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(110, 140, 118);
+}

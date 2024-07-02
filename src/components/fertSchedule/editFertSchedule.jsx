@@ -4,13 +4,22 @@ import {
   UpdateFertSchedule,
 } from "../services/fertService.jsx";
 import { useNavigate, useParams } from "react-router-dom";
+import { getAllPlants, getPlantById } from "../services/plantService.jsx";
+import { Input } from "reactstrap";
 
 export const EditFertSchedule = ({currentUser}) => {
   const [fertSchedule, setFertSchedule] = useState({});
   const { fertScheduleId } = useParams();
+  const [ plants, setPlants ] = useState([])
+const currentUserId = currentUser.currentUser?.id
+useEffect(() => {
+    getAllPlants().then((data) => {
+        setPlants(data)
+    })
+}, [])
 
   useEffect(() => {
-    getPlantById(fertScheduleId).then((data) => {
+    GetFertScheduleById(fertScheduleId).then((data) => {
       const fertScheduleObj = data;
       setFertSchedule(fertScheduleObj);
     });
@@ -19,9 +28,9 @@ export const EditFertSchedule = ({currentUser}) => {
   const handleSave = (event) => {
     event.preventDefault();
     const editedFertSchedule = {
-        id: fertSchedule.id,
-        plantId: fertSchedule.plant.id,
-        userId: fertSchedule.userId,
+        id: fertScheduleId,
+        plantId: parseInt(fertSchedule.plantId),
+        userId: currentUserId,
         date: fertSchedule.date,
     };
     UpdateFertSchedule(editedFertSchedule).then(() => {
@@ -37,16 +46,23 @@ export const EditFertSchedule = ({currentUser}) => {
         <fieldset>
           <div>
           <label>Plant
-          <input
-                        type="text"
+          <Input
+                        type="select"
                         className="form-control"
-                        placeholder={fertSchedule.plant.name}
+                        value={fertSchedule?.plantId}
                         onChange={(event) => {
                             const fertScheduleCopy = {...fertSchedule }
-                            fertScheduleCopy.name = event.target.value
+                            fertScheduleCopy.plantId = event.target.value
                             setFertSchedule(fertScheduleCopy)
                         }}
-                    />
+                    >
+                      <option>select plant</option>
+        {plants.map((plant) => (
+          <option key={plant.id} value={plant.id}>
+            {plant.name}
+          </option>
+        ))}
+                    </Input>
                     </label>
             </div>
         </fieldset>
@@ -54,12 +70,12 @@ export const EditFertSchedule = ({currentUser}) => {
             <div className="form-group">
                 <label>Date
                     <input
-                        type="text"
+                        type="date"
                         className="form-control"
                         placeholder={fertSchedule.date}
                         onChange={(event) => {
                             const fertScheduleCopy = {...fertSchedule }
-                            fertScheduleCopy.name = event.target.value
+                            fertScheduleCopy.date = event.target.value
                             setFertSchedule(fertScheduleCopy)
                         }}
                     />
